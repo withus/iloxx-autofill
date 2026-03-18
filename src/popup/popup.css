@@ -1,0 +1,359 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  color: #333;
+}
+
+.container {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+.header a {
+  color: #888;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header a:hover {
+  color: #333;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.input-row input:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+}
+
+.btn-primary {
+  padding: 8px 14px;
+  background: #4a90d9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background: #357abd;
+}
+
+.btn-primary:disabled {
+  background: #a0c4e8;
+  cursor: not-allowed;
+}
+
+.btn-fill {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.status {
+  margin-top: 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.status.success {
+  background: #e6f9e6;
+  color: #2d7a2d;
+  border: 1px solid #b3e6b3;
+}
+
+.status.error {
+  background: #fde8e8;
+  color: #c0392b;
+  border: 1px solid #f5c6cb;
+}
+
+.status.info {
+  background: #e8f0fe;
+  color: #1a73e8;
+  border: 1px solid #c2d9f7;
+}
+
+.hidden {
+  display: none;
+}
+
+.hint {
+  padding: 10px;
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #6d4c00;
+}
+
+.hint a {
+  color: #4a90d9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.preview {
+  margin-top: 12px;
+}
+
+.preview h2 {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.preview table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.preview td {
+  padding: 3px 0;
+  vertical-align: top;
+}
+
+.preview td:first-child {
+  color: #888;
+  width: 90px;
+  padding-right: 8px;
+}
+
+.preview td:last-child {
+  color: #333;
+  font-weight: 500;
+}
+
+.tracking-section {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.tracking-section h2 {
+  font-size: 13px;
+  margin: 0 0 8px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tracking-input-row {
+  display: flex;
+  gap: 6px;
+}
+
+.tracking-input-row input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.tracking-input-row input:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+}
+
+.btn-small-icon {
+  padding: 6px 10px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.btn-secondary {
+  padding: 8px 14px;
+  background: #e8e8e8;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #d0d0d0;
+}
+
+.btn-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tracking-actions {
+  margin-top: 8px;
+}
+
+.btn-success {
+  padding: 10px;
+  background: #2d7a2d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-success:hover {
+  background: #236b23;
+}
+
+.btn-success:disabled {
+  background: #8fbc8f;
+  cursor: not-allowed;
+}
+
+.status.warning {
+  background: #fff8e1;
+  color: #6d4c00;
+  border: 1px solid #ffe082;
+}
+
+.history {
+  margin-top: 14px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.history h2 {
+  font-size: 12px;
+  margin: 0 0 6px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.history li {
+  padding: 4px 0;
+  font-size: 12px;
+  cursor: pointer;
+  color: #4a90d9;
+}
+
+.history li:hover {
+  text-decoration: underline;
+}
+
+.history li .name {
+  color: #666;
+  margin-left: 6px;
+}
+
+.history li .tracking-badge {
+  color: #2d7a2d;
+  margin-left: 4px;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.history-main {
+  /* First line: Order-ID + Name */
+}
+
+.history-detail {
+  /* Second line: Tracking info or status */
+  font-size: 11px;
+  margin-top: 2px;
+  padding-left: 4px;
+}
+
+.history-detail .tracking-sent {
+  color: #2d7a2d;
+  font-weight: 600;
+}
+
+.history-detail.pending span {
+  color: #e67e22;
+}
+
+.btn-resend-tracking {
+  font-size: 10px;
+  margin-left: 6px;
+  padding: 1px 6px;
+  background: #e8e8e8;
+  color: #555;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.btn-resend-tracking:hover {
+  background: #d0d0d0;
+  color: #333;
+}
+
+.btn-add-tracking {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #fff;
+  background: #e67e22;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.btn-add-tracking:hover {
+  background: #d35400;
+}
+
+.pending-banner {
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}

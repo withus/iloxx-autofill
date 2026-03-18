@@ -1,0 +1,124 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 20px;
+  color: #1a1a1a;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+input[type="url"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+}
+
+small {
+  display: block;
+  color: #888;
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-small {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #4a90d9;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #357abd;
+}
+
+.btn-secondary {
+  background: #e8e8e8;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #d0d0d0;
+}
+
+.btn-small {
+  padding: 4px 10px;
+  font-size: 12px;
+  background: #eee;
+  color: #555;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.status {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.status.success {
+  background: #e6f9e6;
+  color: #2d7a2d;
+  border: 1px solid #b3e6b3;
+}
+
+.status.error {
+  background: #fde8e8;
+  color: #c0392b;
+  border: 1px solid #f5c6cb;
+}
+
+.hidden {
+  display: none;
+}

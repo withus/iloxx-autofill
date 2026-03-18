@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>iloxx Autofill - Einstellungen</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <h1>iloxx Autofill - Einstellungen</h1>
+
+    <div class="form-group">
+      <label for="apiUrl">API-URL</label>
+      <input type="url" id="apiUrl" placeholder="https://shop.example.com">
+      <small>Basis-URL der Shop-API (nur https, ohne Slash am Ende). Beim Speichern fragt Chrome nach dem Zugriff auf diese Adresse.</small>
+    </div>
+
+    <div class="form-group">
+      <label for="apiKey">API-Key</label>
+      <input type="password" id="apiKey" placeholder="API-Key eingeben">
+      <button type="button" id="toggleKey" class="btn-small">Anzeigen</button>
+    </div>
+
+    <div class="actions">
+      <button id="saveBtn" class="btn-primary">Speichern</button>
+      <button id="testBtn" class="btn-secondary">Verbindung testen</button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

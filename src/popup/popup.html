@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>iloxx Autofill</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>iloxx Autofill</h1>
+      <a href="#" id="settingsLink" title="Einstellungen">&#9881;</a>
+    </div>
+
+    <div id="setupHint" class="hint hidden">
+      Bitte zuerst <a href="#" id="setupLink">Einstellungen</a> konfigurieren.
+    </div>
+
+    <div id="mainContent">
+      <div class="input-row">
+        <input type="text" id="orderId" placeholder="Bestellnummer" autofocus>
+        <button id="fetchBtn" class="btn-primary">Laden</button>
+      </div>
+
+      <div id="pendingBanner" class="pending-banner hidden">
+        &#9888; Formular bereits ausgefuellt - Tracking ausstehend
+      </div>
+
+      <div id="status" class="status hidden"></div>
+
+      <div id="preview" class="preview hidden">
+        <h2>Versanddaten</h2>
+        <table id="previewTable"></table>
+        <button id="fillBtn" class="btn-primary btn-fill">Formular ausfuellen</button>
+      </div>
+
+      <div id="trackingSection" class="tracking-section hidden">
+        <h2>Versand abschliessen</h2>
+        <div class="tracking-input-row">
+          <input type="text" id="trackingNumber" placeholder="GLS Track-ID">
+          <button id="autoDetectBtn" class="btn-secondary btn-small-icon" title="Track-ID von iloxx.de erkennen">&#128269;</button>
+        </div>
+        <div class="tracking-actions">
+          <button id="sendTrackingBtn" class="btn-success btn-fill" disabled>An Shop senden</button>
+        </div>
+        <div id="trackingStatus" class="status hidden"></div>
+      </div>
+
+      <div id="history" class="history hidden">
+        <h2>Letzte Bestellungen</h2>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
